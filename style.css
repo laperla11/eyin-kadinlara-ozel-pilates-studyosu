@@ -1,0 +1,426 @@
+
+html {
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width:100%;
+  font-family:"Raleway", sans-serif;
+  line-height: 1.8rem;
+}
+
+.brickk{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;/*bolumlerdeki
+  sutunlar arasinda esit mesafe birakir*/
+  
+}
+
+.brick{
+  width:45%;/*bolumleri iki sutun yapar*/
+  min-width:350px;/*mobil cihazlar icin tek sutun yapar*/
+  padding:0 20px;/*mobil cihazlarda ekran yazilarin
+  yanlari ile ekran kenarlarinda bosluk birakir*/
+  text-align: justify;
+  /*border:2px solid green;*/
+}
+
+.image-container{
+max-height:270px;/*farkli yukseklikteki 
+resimlerin fazlaligini kesmek icin*/
+overflow:hidden;
+}
+
+.image-container img{
+  max-width:100%;
+  height: auto;
+
+}
+
+/*bolum icindeki basliklari stillendir*/
+h2{
+  font-family: 'Great Vibes', cursive;
+  font-size:50px;
+  font-weight:300;
+  text-align:center;
+  padding-top:20px;/*secili bolumde menu barin
+  basliklari ortmesi engellenir*/
+}
+
+/*navigation-bar*/
+
+.menu-wrapper{
+  /*navbar ile logoyu kapsar*/
+  background-color: rgba(0, 0, 0, 0.8);
+  width:100%;
+  display:flex;
+  justify content:space-between;
+  overflow: hidden;
+  /*border: 2px solid red;*/
+}
+
+.topnav {
+  overflow: hidden;
+  /*background-color: rgba(255, 0, 0, 0.2);*/
+  /*border: 2px solid yellow;*/
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white/*#f2f2f2*/;
+  text-align: center;
+  padding:18px;/*her sekmenin yan-alt-ust genisligini ayarlama*/
+  text-decoration: none;/*linklerin alt cizgisini iptal eder*/
+  font-size: 18px;
+  line-height: 25px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-size:22px;
+}
+
+.active {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+  }
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+     
+  }
+  
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    width:100%;
+    padding: 10px;
+  }
+}
+
+.fixed {
+  position: -webkit-fixed;
+  position: fixed;
+  top: 0;
+  z-index:9999;
+  }
+
+
+/* Style the logo link */
+.logo {
+  display: inline-block;
+  height:50px;
+  width:150px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right:30px;
+  /*border: 1px solid blue;*/  
+}
+
+.logo img{
+  width:100%;
+  height:100%;
+}
+
+/*navigation-bar ends*/
+
+.mySlides {display:none;}
+  
+.sec {
+  width: 100%;
+  padding-top: 25px;/*navigation barin fixed olmasi
+  nedeniyle secilen bolumlerde basliklar menu altinda 
+  kalmasini engellemek icin menu kalinligi kadar*/
+  /*border: 2px solid green;*/
+}
+
+.home {
+
+  position:relative;
+  width:100%;
+  max-height:570px;/*normal ekranlarda bu yukseklikte
+  mobil cihazlarda daha alcak olmasini saglar*/
+  display:flex;
+  flex-direction:column;
+  justify-content: center;/*slide resimleri 
+  yuksekliginin 570 px ile sinirlanmasi nedeniyle
+  resimlerin tasan kisimlarinin alt ve ustten esit
+  kesilmesi nedeniyle secilmistir*/
+  overflow: hidden;
+}
+
+.motto{
+  width:100%;
+  position:absolute;
+  top:85%;
+  margin: 0 auto;
+  text-shadow: 2px 2px 2px black;
+  color:white;
+  /*border:1px solid red;*/
+}
+
+.motto p{
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  /*height: 2rem;*/ 
+  
+  text-align: center;
+  /*border:1px dotted black;*/
+}
+
+/*mobil cihazlarda ekrana mottoyu tek satira
+ sigdirmak icin yaziyi kucult*/
+@media screen and (max-width: 800px) {
+  .motto p{
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 5px; 
+  }
+}
+
+.slide-left {
+  width:100%;
+  height:40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+}
+
+.slide-left p{
+  
+  animation: slide-left 15s ease 1s infinite normal;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 2px;
+  padding: 5px;
+  margin:0;
+  color:white;
+  
+}
+
+/*mobil cihazda kayan yaziyi tek satira 
+sigdirmak icin*/
+@media screen and (max-width: 800px) {
+  .slide-left p{
+    font-size: 12px;}
+  }
+/*soldan kayan yazi animasyonu, animasyonu 
+kullandiktan sonra tanimlayabiliyoruz*/
+@keyframes slide-left {
+  from {
+    margin-left: 0%;
+    width:100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width:100%;
+  }
+}
+
+/*trainers bolumu styling*/
+
+/*baslangicta iki trainer tek sutunu
+esit kullaniyor width-%45 ekran 
+kuculdukce min-width-250px ve flex-wrap 
+sayesinde her trainer tek sutun oluyor*/
+.trainer-wrapper{
+  display:flex;
+  flex-wrap: wrap;
+}
+.trainer{
+  width:45%;/*trainer sutunu iki esit 
+  parcaya*/
+  min-width: 250px;/*mobil cihazlarda 
+  her egitmen tek sutun*/
+  margin: 0 auto;
+  text-align: center;
+
+  }
+
+  .trainer .image-container{
+    border-radius: 60%;/*resim etrafini 
+    yuvarlar*/
+    max-height:250px;/*trainer resim 
+    yuksekligi sinirlandirma*/
+}
+
+
+
+/*features bolumu styling*/
+
+
+.brick li{
+font-size: 1.3rem;  
+font-family: Dosis;
+padding: 2px 0;
+text-align: left;/*ilk etapta tum 
+listelemelr sola yasli*/
+}
+
+.features li{
+ /*hizmetler listesinde 
+ satir araliklarini ve 
+ yazi boyutunu sonradan degistirme*/
+  text-align: center;/*hizmetler listesindeki
+  listelemeyi sola yasladan ortaya degistirme*/
+  font-weight: 600;
+  list-style-type: none;
+  font-size: 1.8rem;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .features li{
+    text-align: left;}/*mobil cihazlarda listelemeleri 
+    sola yaslama*/
+  }
+
+/*styling gallery section*/
+.gallery{
+  width:30%;
+min-width: 170px;
+margin-bottom: 10px;/*resimler satir
+arasina bosluk biraktirma*/
+}
+
+/*styling contact-us section*/
+
+.comms{
+     /*border:2px solid green;*/ 
+}
+
+
+iframe{
+
+width: 100%;/*google mapin genisligini
+brick div genisligi olan 45%ye esitler */
+height:500px;
+frameborder:0;
+border:0  
+}
+
+.social p{
+  color:white;
+  margin:10px;
+  /*border:2px dashed green;*/
+}
+
+.social a{
+  color:white;
+  text-decoration:none;        
+  /*border:2px dashed red;*/
+}
+
+.social a:hover{
+  color:black;
+  }
+
+.fa{
+ text-align: center;
+  font-size: 30px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  color:white;
+  background: blue;
+  border-radius: 80%;
+
+}
+
+
+
+    /* Style inputs */
+
+form p{
+  width:100%;
+  /*border: 1px solid #ccc;*/
+}
+
+label{
+  
+  padding:10px;
+}
+input[type=text], textarea {
+    text-align:justify;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    /*border: 1px solid red;*/
+}
+
+input[type=submit] {
+    background-color: rgb(128,128,255);
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: darkblue;
+}
+
+@media screen and (max-width: 800px) {
+.comms, input[type=text], input[type=submit]{
+  width:100%;
+  margin-top: 0;
+}
+}
+
+section:nth-child(6){
+  padding-bottom: 10px;/*gonder butonu altina
+  bosluk ekleme*/
+} 
+
+.copyright {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 10pt;
+    text-align: center;
+    color: white;
+}
+
+
+#about-us{
+  background-color: rgb(230,255,230);
+}
+
+#gallery{
+  background-color: rgb(179,179,255);
+}
+
+#features-plus {
+  background-color: rgb(179,255,179);
+}
+
+#contact-us{
+  background-color: rgb(128,128,255);
+}
