@@ -29,7 +29,7 @@ body {
 .brick{
   width:45%;/*bolumleri iki sutun yapar*/
   min-width:350px;/*mobil cihazlar icin tek sutun yapar*/
-  padding:0 20px;/*mobil cihazlarda ekran yazilarin
+  padding:20px;/*mobil cihazlarda ekran yazilarin
   yanlari ile ekran kenarlarinda bosluk birakir*/
   text-align: justify;
   /*border:2px solid green;*/
