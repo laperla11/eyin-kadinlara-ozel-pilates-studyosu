@@ -230,7 +230,7 @@ h2{
 /*mobil cihazda kayan yaziyi tek satira 
 sigdirmak icin*/
 @media screen and (max-width: 800px) {
-  .slide-left p{
+  .slide-left h1{
     font-size: 12px;}
   }
 /*soldan kayan yazi animasyonu, animasyonu 
