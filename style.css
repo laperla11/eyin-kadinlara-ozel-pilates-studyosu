@@ -5,7 +5,9 @@ html {
 }
 
 * {
-  box-sizing: border-box;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
 }
 
 body {
@@ -212,7 +214,7 @@ h2{
   overflow:hidden;
 }
 
-.slide-left p{
+.slide-left h1{
   
   animation: slide-left 15s ease 1s infinite normal;
   font-size: 24px;
