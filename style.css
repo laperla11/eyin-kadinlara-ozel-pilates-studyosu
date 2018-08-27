@@ -18,7 +18,8 @@ body {
 }
 
 .brickk{
-  width:100%;
+  padding-top:20px;
+	width:100%;
   display:flex;
   flex-wrap:wrap;
   justify-content: space-evenly;/*bolumlerdeki
@@ -29,7 +30,7 @@ body {
 .brick{
   width:45%;/*bolumleri iki sutun yapar*/
   min-width:350px;/*mobil cihazlar icin tek sutun yapar*/
-  padding:20px;/*mobil cihazlarda ekran yazilarin
+  padding:0 20px;/*mobil cihazlarda ekran yazilarin
   yanlari ile ekran kenarlarinda bosluk birakir*/
   text-align: justify;
   /*border:2px solid green;*/
