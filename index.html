@@ -239,7 +239,9 @@
             <input type="text " id="email " name="email " placeholder="E-Posta Adresiniz..."></p>
             <p><label for="Comment ">Mesajınız</label></p>
             <textarea id="comment " name="comment" placeholder="Mesajınız..." style="height:170px "></textarea>
-            <input type="submit" value="Gonder">
+            <input type="submit" value="Gonder" onclick="funcSubmit()">
+            <p id="demo"></p>
+
           </form>  
         </div><!--forms ends-->
         
@@ -281,6 +283,12 @@ function myFunction() {
       setTimeout(carousel, 2000); // Change image every 2 seconds
     }
   </script>
+  <script>
+    function funcSubmit() {
+      document.getElementById("demo").innerHTML = "Hello World";
+    }
+  </script>
+
 
 
 </body>
