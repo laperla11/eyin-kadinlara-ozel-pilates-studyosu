@@ -12,39 +12,40 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
 
 </head>
 
 <body>
   
-  <header class="sec" id="header">
+  <section class="sec" id="header">
+    
     <div class="menu-wrapper fixed">
-      <nav class="topnav" id="myTopnav">
+      <div class="topnav" id="myTopnav">
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style="background-color:rgba(255, 0, 0, 0.5); "></i></a>
         <a href="#home" class="active">Ana Sayfa</a>
         <a href="#about-us">Hakkımızda</a>
         <a href="#features-plus">Hizmetlerimiz</a>
         <a href="#gallery">Galeri</a>
         <a href="#contact-us">İletişim</a>
-      </nav><!--topnav ends here-->
+      </div><!--topnav ends here-->
       <div class="logo">
-        <img src="eyin-logo.png" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu-logo">
+        <img src="eyin-logo.png" alt="Ey-in pilates logo">
       </div>
     </div><!--menu-wrapper ends here-->
     
-  </header>
+  </section>
 
   <section class="sec" id="home">
     
     <div class="home">
       <div class="slideshow" >
-        <img class="mySlides" src="./pictures/eyin12.jpeg" style="width:100%" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        <img class="mySlides" src="./pictures/eyin11.jpeg"
-      style="width:100%" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        <img class="mySlides" src="./pictures/eyin16.jpeg"
-        style="width:100%" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        <img class="mySlides" src="./pictures/eyin14.jpeg" style="width:100%" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
+        <img class="meSlides" src="./pictures/eyin02.jpeg" style="width:100%">
+        <img class="meSlides" src="./pictures/eyin03.jpeg"
+      style="width:100%">
+        <img class="meSlides" src="./pictures/eyin08.jpeg"
+        style="width:100%">
+        <img class="meSlides" src="./pictures/eyin01.jpeg" style="width:100%">
         
       </div><!--slideshow ends-->
       
@@ -80,16 +81,16 @@
       <h2>Eğitmenlerimiz</h2>
       <div class="trainer-wrapper">
       <div class="trainer first">
-        <figure class="image-container">
-          <img src="./pictures/esra.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        </figure>
+        <div class="image-container">
+          <img src="./pictures/esra.jpeg" alt="Trainer-1">
+        </div>
         <p>Esra Yücel</br>Eğitmen</p>
       </div>
 
       <div class="trainer second">
-        <figure class="image-container">
-          <img src="./pictures/irem.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        </figure>
+        <div class="image-container">
+          <img src="./pictures/irem.jpeg" alt="Trainer-1">
+        </div>
         <p>İrem Gürgen</br>Eğitmen</p>
       </div>
     </div><!--columns end-->
@@ -139,114 +140,120 @@
   </section>
 
   <section class="sec" id="gallery">
+    
+
     <h2>Galeri</h2>
-    <div class="container">
-      <div>
-        <img src="./pictures/eyin1.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin2.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin3.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin4.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin5.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin6.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin9.jpeg" alt="gallery-1">
-        
-      </div>
-      
-      <div>
-        <img src="./pictures/eyin10.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin13.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin15.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin7.jpeg" alt="gallery-1">
-        
-      </div>
-      <div>
-        <img src="./pictures/eyin8.jpeg" alt="gallery-1">
-        
-      </div>
-  
+
+<div class="row">
+  <div class="column">
+    <img src="./pictures/eyin01.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./pictures/eyin02.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./pictures/eyin03.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./pictures/eyin04.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./pictures/eyin05.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./pictures/eyin06.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./pictures/eyin07.jpeg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./pictures/eyin08.jpeg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+
+
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="./pictures/eyin01.jpeg" style="width:100%">
     </div>
 
-    <div class="brickk">
-      
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin1.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin2.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin3.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin4.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin5.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin6.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin9.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin10.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin13.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin8.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <div class="brick gallery image-container">
-        <img src="./pictures/eyin15.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      <di class="brick gallery image-container">
-        <img src="./pictures/eyin7.jpeg" alt="Kadınlara özel-Pilates-Stüdyosu-Soğanlık-Kartal-Pendik-Yakacık-Uğur Mumcu">
-        
-      </div>
-      
-        
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="./pictures/eyin02.jpeg" style="width:100%">
     </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="./pictures/eyin03.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="./pictures/eyin04.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="./pictures/eyin05.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="./pictures/eyin06.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="./pictures/eyin07.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="./pictures/eyin08.jpeg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>  
+
+
+    <div class="column">
+      <img class="demo cursor" src="./pictures/eyin01.jpeg" style="width:100%" onclick="currentSlide(1)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./pictures/eyin02.jpeg" style="width:100%" onclick="currentSlide(2)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./pictures/eyin03.jpeg" style="width:100%" onclick="currentSlide(3)" alt=" ">
+    </div>
+    <div class="column">
+#';bb'                b      <img class="demo cursor" src="./pictures/eyin04.jpeg" style="width:100%" onclick="currentSlide(4)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./pictures/eyin05.jpeg" style="width:100%" onclick="currentSlide(5)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./pictures/eyin06.jpeg" style="width:100%" onclick="currentSlide(6)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./pictures/eyin07.jpeg" style="width:100%" onclick="currentSlide(7)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./pictures/eyin08.jpeg" style="width:100%" onclick="currentSlide(8)" alt=" ">
+    </div>
+
+
+  </div>
+</div>
+
 
   </section>
 
@@ -265,7 +272,7 @@
       </div><!--comms-1 ends-->
       
       <div class="comms brick">
-        <address class="social">
+        <div class="social">
            
             <p>
               <span class="fa fa-home"></span> Orta Mahalle, Tiryaki Hasanpaşa Caddesi, Poyraz Ahmet Apt. N0:2 D:8, Soğanlık-Kartal/İstanbul</p>
@@ -283,7 +290,7 @@
               " target="_blank ">eyinpilatestudyosu</a>
             </p>
   
-        </address>
+        </div>
        <!--social ends-->
         
         <div class="forms">
@@ -294,9 +301,7 @@
             <input type="text " id="email " name="email " placeholder="E-Posta Adresiniz..."></p>
             <p><label for="Comment ">Mesajınız</label></p>
             <textarea id="comment " name="comment" placeholder="Mesajınız..." style="height:170px "></textarea>
-            <input type="submit" value="Gonder" onclick="funcSubmit()">
-            <p id="demo"></p>
-
+            <input type="submit" value="Gonder">
           </form>  
         </div><!--forms ends-->
         
@@ -306,11 +311,55 @@
 
   </section>
 
-  <footer class="copyright">
+  <section class="copyright">
             &copy; 2018 Laperla Web Design. All rights reserved.
-  </footer>
+  </section>
+
+
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 
 <!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+
+
 <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -325,9 +374,10 @@ function myFunction() {
   
     var myIndex = 0;
     carousel();
+
     function carousel() {
       var i;
-      var x = document.getElementsByClassName("mySlides");
+      var x = document.getElementsByClassName("meSlides");
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       }
@@ -337,12 +387,7 @@ function myFunction() {
       setTimeout(carousel, 2000); // Change image every 2 seconds
     }
   </script>
-  <script>
-    function funcSubmit() {
-      input[type=submit].style.display="none";
-      document.getElementById("demo").innerHTML = "Mesajınız başarıyla gönderilmiştir";
-    }
-  </script>
+
 
 
 
